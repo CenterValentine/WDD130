@@ -8,10 +8,10 @@ body {
 
 :root {
     --paragraph-font: 'Raleway', sans-serif;
-    --secondary-color: #DBD9DB;
-    --primary-color: #6A7062;
-    --accent1-color: #253C78;
-    --accent2-color: #747572;
+    --primary-color: #253C78;
+    --secondary-color: #66A182;
+    --accent1-color: #DBD9DB;
+    --accent2-color: #45503B;
 
     --heading-font: 'Raleway', sans-serif;
 
