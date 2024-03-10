@@ -7,19 +7,18 @@ body {
     }
 
 :root {
-    --paragraph-font: 'Raleway', sans-serif;
     --primary-color: #253C78;
     --secondary-color: #66A182;
     --accent1-color: #DBD9DB;
     --accent2-color: #45503B;
 
+    --paragraph-font: 'Raleway', sans-serif;
     --heading-font: 'Raleway', sans-serif;
 
     --nav-background-color: #747572;
     --nav-link-color: #253C78;
-    --nav-link-hover-color: #747572;
+    --nav-hover-link-color: #747572;
     --nav-hover-background-color: #747572;
-
 }
 
 h1, h2, h3, h4, h5, h6 {
