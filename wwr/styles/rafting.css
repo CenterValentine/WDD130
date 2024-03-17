@@ -16,12 +16,27 @@
     --nav-hover-background-color: #747572;
 }
 
+
+
 body {
     font-family: var(--paragraph-font);
     max-width: 960px;
     padding: 20px;
+    /* remove all underlines from links */
     text-decoration: none;
+
 }
+
+nav a {
+    text-decoration: none;
+    color: var(--nav-link-color);
+
+    &:hover {
+        color: var(--nav-hover-link-color);
+    }
+    
+}
+
 
 h1, h2, h3, h4, h5, h6 {
     color:var(--accent2-color);
@@ -89,3 +104,5 @@ section img {
     width: 400px; /* Set a fixed width for all images */
     height: 400px; /* Maintain aspect ratio */
 }
+
+
