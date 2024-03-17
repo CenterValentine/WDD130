@@ -10,9 +10,9 @@
     --paragraph-font: 'Raleway', sans-serif;
     --heading-font: 'Raleway', sans-serif;
 
-    --nav-background-color: #747572;
-    --nav-link-color: #253C78;
-    --nav-hover-link-color: #747572;
+    --nav-background-color: #45503B;
+    --nav-link-color: #DBD9DB;
+    --nav-hover-link-color: #DBD9DB;
     --nav-hover-background-color: #747572;
 }
 
@@ -27,14 +27,28 @@ body {
 
 }
 
-nav a {
-    text-decoration: none;
-    color: var(--nav-link-color);
 
-    &:hover {
-        color: var(--nav-hover-link-color);
-    }
-    
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-link-hover-color);
+    background-color: var(--nav-hover-background-color);
 }
 
 
