@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #253C78;
+    --secondary-color: #66A182;
+    --accent1-color: #DBD9DB;
+    --accent2-color: #45503B;
+
+    --paragraph-font: 'Raleway', sans-serif;
+    --heading-font: 'Raleway', sans-serif;
+
+    --nav-background-color: #747572;
+    --nav-link-color: #253C78;
+    --nav-hover-link-color: #747572;
+    --nav-hover-background-color: #747572;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color:var(--accent2-color);
+    font-size: 3em;
+}
+
+p {
+    color:var(--primary-color);
+}
+
+p > strong {
+    color:var(--secondary-color);
+}
+
+.hero {
+    
+    position: relative;
+    text-align: center;
+/* background color opacity */
+
+}
+
+.hero > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute; 
+    top: 50px; 
+    width: 100%;
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+    text-align: center;
+    /* verticle alignment*/
+    line-height: 2em;
+    opacity: .80;
+
+
+    margin-bottom: 3em;
+}
+
+.hero article {
+    position: absolute; 
+    top: 27em; 
+    margin: 0 10em;
+    opacity: .9;
+    background-color: var(--accent1-color);
+
+}
+
+.hero article p {
+    padding: 1em;
+    margin-right: 1em;
+    opacity: 1;
+}
+
+.hero article img {
+    float: right;
+    padding: 2em;
+}
+
+section img {
+    width: 400px; /* Set a fixed width for all images */
+    height: 400px; /* Maintain aspect ratio */
+}
