@@ -73,6 +73,7 @@ p > strong {
     display: block;
     width: 100%;
     height: auto;
+    margin: 10px auto;
 }
 
 .hero h1 {
@@ -90,8 +91,8 @@ p > strong {
 
 .hero article {
     position: absolute; 
-    top: 500px; 
-    margin: 0 10em;
+    top: 40em; 
+    margin: -5em 10em;
     opacity: .9;
     background-color: var(--accent1-color);
 
