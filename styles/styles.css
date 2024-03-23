@@ -6,19 +6,19 @@
 
 
 nav {
-    background-color: steelblue;
+        background-color: steelblue;
     padding: 10px;
 }
 
 nav a {
-    color: white;
+        color: white;
     display: block;
     padding: 20px;
 }
 
 h1 {
     color: steelblue;
-}
+    }
 
 main img {
     width: 150px;
@@ -34,7 +34,7 @@ p {
 }
 
 main {
-    max-width: 840px;
+max-width: 840px;
 }
 
 aside {
@@ -77,6 +77,6 @@ img.roomImg {
 
 footer {
     margin-top: 10px;
-    border: 10px 0px 0px 0px;
+    border: 10px 0px 0px
     text-align: center;
 }
