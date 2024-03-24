@@ -87,6 +87,7 @@ h6 {
 
 p {
     color: var(--primary-color);
+    font-size: 1em;
 }
 
 p>strong {
@@ -130,6 +131,8 @@ p>strong {
 .hero article p {
     padding: 1em;
     margin-right: 1em;
+    /* Auto shrink font */
+
     opacity: 1;
     height: auto;
 }
