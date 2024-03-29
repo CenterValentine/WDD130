@@ -67,7 +67,6 @@ input, select, textarea {
 button {
     margin: 1rem;
     width: 20%;
-/* align button to the right */
     justify-self: end;
     background-color: navy;
     color: #fff;
@@ -80,5 +79,5 @@ button {
 .form-item {
     display: grid;
     align-items: center;
-    justify-self:
+    /* justify-self: */
 }
