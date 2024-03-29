@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    color: black;
+    font-size: 1.2em;
+}
+
+header{
+    margin: 0 auto;
+    width: 650px;
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 2em;
+    color: navy;
+    text-align: center;
+}
+
+form {
+    margin: 0 auto;
+    width: 650px;
+    border: 1px solid navy;
+    border-radius: 0.4rem;
+    background-color: #f9f9f9;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+legend {
+    font-size: 1.2em;
+    color: navy;
+}
+
+label, input, select, textarea, button {
+font-family: 'Roboto', sans-serif;
+}
+
+label {
+    text-align: right;
+    padding: .5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+input, select, textarea {
+    padding: .5rem;
+    font-size: 1.1rem;
+    justify-self: end;
+}
+
+button {
+    margin: 1rem;
+    width: 20%;
+/* align button to the right */
+    justify-self: end;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+    justify-self:
+}
