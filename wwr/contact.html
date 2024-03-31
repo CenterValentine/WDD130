@@ -66,9 +66,9 @@
         <section class="contact-form">
             <h2>Contact Us</h2>
             <form action="https://formspree.io/f/xnqldzqz" method="POST">
-                <legend>Please contact our team of rafting experts for any questions!</legend>
 
                 <fieldset class="section1">
+                    <legend>Please contact our team of rafting experts for any questions:</legend>
                     <!-- class="basic-inputs" -->
                     <div>
                         <label for="name">Name:</label>
@@ -82,8 +82,9 @@
 
 
                 <fieldset class="section2">
+                    <legend>Reason for request?</legend>
                     <div>
-                        <label class="radio-grid" for="purpose"><strong>Reason for request?</strong></label></div>
+                        <label class="radio-grid" for="purpose"></label></div>
                     <div class="section2-radio">
                         <input type="radio" id="purpose" name="purpose" value="General Inquiry" required>General Inquiry
                     </div>
@@ -97,15 +98,17 @@
                     </div>
 
                     <fieldset class="section3">
-                        <div> <label for="message"><strong>Message:</strong></label></div>
+                        <legend>Message:</legend>
+                        <div> <label for="message"></label></div>
                         <div>
                             <textarea id="message" name="message" required></textarea>
                         </div>
                     </fieldset>
 
                     <fieldset class="section4">
+                        <legend>Subscribe to our newsletter?</legend>
                         <div>
-                            <label for="subscribe"><strong>Subscribe to our newsletter?</strong></label>
+                            <label for="subscribe"></label>
                         </div>
                         <div>
                             <input type="checkbox" id="subscribe" name="subscribe" value="yes">Yes, I would like to
