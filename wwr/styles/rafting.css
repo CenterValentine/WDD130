@@ -290,8 +290,6 @@ max-height: 500px;
     align-self: center;
     flex-direction: column;
     max-height: 400px;
-    
-    flex: 0 1em 0;   /* Flex-grow, flex-shrink, flex-basis */
     overflow-y: hidden;
 }
 
@@ -585,7 +583,7 @@ section {
 }
 
 .adventure-team figcaption {
-    background-color: linear-gradient(to bottom, white 0%,grey 100%);
+
     margin: 0 auto;
     max-height: 138px;
     max-width: 100%;
