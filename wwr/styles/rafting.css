@@ -96,12 +96,226 @@ p>strong {
     color: var(--secondary-color);
 }
 
+
+
+.home-container-hero {
+    display: block;
+    width: 100%;
+    margin: 1em auto;
+
+}
+
+.hero-ish img {
+    /* display: block; */
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    /* margin: 0 auto; */
+    /* position: relative; */
+    z-index: -1;
+}
+
+.home-container-hero h1 {
+    position: absolute;
+    margin: 1em auto;
+    z-index: 1;
+
+
+}
+
+.home-container-cta {
+    position: relative;
+    margin: 0em auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 1em;
+}
+
+.home-container-cta h1 {
+    font-size: 3em;
+}
+.home-container-cta legend {
+    font-size: 2em;
+    padding: 0em 1em;
+
+}
+
+.container-cta-card-subscribe {
+    margin: 0 auto;
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: var(--accent1-color);
+    width: 100%;
+    min-width: 450px;
+}
+
+.container-cta-card-subscribe {
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(5, 1fr);
+max-height: 500px;
+}
+
+.container-cta-card-subscribe form {
+    grid-area: 2 / 1 / 6 / 2;
+    /* stretch over grid */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+}
+
+.container-cta-card-subscribe form label {
+    font-size: 1.1em;
+    padding-right: .25em;
+}
+
+.container-cta-card-subscribe form input {
+    height: 2.25em;
+    width: 15em;
+    font-size: 1.1em;
+}
+
+
+.container-cta-card-subscribe form div{
+    margin: 1em auto;
+    /* padding: 1em;  */
+}
+
+.hero button, form button{
+    margin: 1em auto;
+    padding: 1em;
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+    border-radius: 0.5rem;
+    border: 0;
+
+}
+
+.container-cta-card-trip {
+    display: block;
+    position: relative;
+    grid-area: 1 / 2 / 2 / 3;
+    margin: 0 auto;
+    min-width: 450px;
+    width: 100%;
+
+}
+
+.container-cta-card-trip img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+    z-index: -1;
+    position: relative;
+    max-height: 500px;
+    min-height: 400px;
+    object-fit: cover;
+
+}
+
+.container-cta-card-trip h1 {
+    position: absolute;
+    color: var(--accent1-color);
+    width: 100%;
+    margin: 2.75em auto;
+}
+
+.container-cta-card-trip-button {
+    position: relative;
+}
+
+.container-cta-card-trip button {
+    position: absolute;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+    border-radius: 0.5rem;
+    border: 0;
+    bottom: 7em;
+    left: 50%;
+    transform: translate(-50%, 50%);
+
+    /* border: 0; */
+}
+
+.container-home-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    
+    
+}
+
+.container-home-info p {
+
+    text-overflow: clip;
+    margin: 0 auto;
+    max-height: 400px;
+    font-size: 1.6vw;
+}
+
+/* 
+.container-home-info .container-home-info-flex2 p {
+    margin: 0 auto;
+    /* padding: 15% 0; */
+    /* text-align: center;
+    font-size: 1.3em;
+    background-color: var(--accent1-color);
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+    flex-grow: 1;
+    flex-shrink: 1;
+ */
+ .container-home-info-flex2:hover, .container-home-info-flex4:hover {
+    overflow-y: scroll;
+ }
+
+.container-home-info-flex1,
+.container-home-info-flex2,
+.container-home-info-flex3,
+.container-home-info-flex4 {
+    display: block;
+    margin: 0.5em; /* Adjusted for a consistent margin around all items */
+    flex-basis: calc(50% - 1em);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    text-align: center;
+    align-self: center;
+    flex-direction: column;
+    max-height: 400px;
+    
+    flex: 0 1em 0;   /* Flex-grow, flex-shrink, flex-basis */
+    overflow-y: hidden;
+}
+
+
+.container-home-info-flex3{
+order: 4;
+}
+.container-home-info-flex4 {
+    order: 3; 
+
+}
+
+.container-home-info img {
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
 .hero {
     position: relative;
     text-align: center;
 }
 
-.hero > img {
+.hero>img {
     display: block;
     width: 100%;
     height: auto;
@@ -121,6 +335,19 @@ p>strong {
     margin-bottom: 3em;
 }
 
+.article-like {
+    position: absolute;
+    opacity: .9;
+    color: var(--accent2-color);
+    background-color: var(--accent1-color);
+    width: 100%;
+    height: auto;
+    margin: -3.5em auto;
+    padding: .25em;
+    font-size: 2em;
+
+}
+
 .hero article {
     position: absolute;
     top: 75%;
@@ -129,6 +356,7 @@ p>strong {
     background-color: var(--accent1-color);
     height: auto;
 }
+
 /* 
 .hero .address-info article {
     position: absolute;
@@ -175,7 +403,7 @@ p>strong {
     grid-area: 1 / 1 / 3 / 2;
     line-height: 1.5em;
     font-size: 1.4em;
-    text-align:center;
+    text-align: center;
     align-self: end;
 }
 
@@ -201,7 +429,8 @@ p>strong {
     align-self: center;
 
 }
-    /* cover grid auto
+
+/* cover grid auto
     grid-area: 1 / 1 / 3 / 4;
     width: 100%;
     height: auto;
@@ -269,7 +498,7 @@ section {
     margin: 0 auto;
     height: 100%;
     width: 100%;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     column-gap: 10px;
     margin-top: 3%;
     margin-bottom: 3%;
@@ -283,12 +512,15 @@ section {
     text-align: center;
     margin: 0 auto;
     margin-bottom: 2%;
-    
+
 }
 
 .adventure figure {
     margin: 0 auto;
+    /* text-overflow: clip; */
+    max-height: 100px;
 }
+
 
 .adventure img {
     grid-row: 2 / 3;
@@ -306,21 +538,29 @@ section {
 
 
 
+.adventure-details figcaption {
+    margin: 0 auto;
+    max-height: 100px;
+    text-overflow: clip;
+
+}
 
 .adventure-team {
     display: grid;
-    grid-template-columns: minmax(300px, auto);
-    grid-template-rows:  minmax(100px, auto);
+    /* grid-template-columns: minmax(300px, auto); */
+    grid-template-rows: minmax(100px, auto);
     /* overflow: hidden;  */
     margin: 0 auto;
     height: 100%;
     width: 100%;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     column-gap: 10px;
     margin-top: 3%;
     margin-bottom: 3%;
     /* justify-content: space-around; */
 }
+
+
 
 .adventure-team h2 {
     grid-column: 1 / 4;
@@ -329,17 +569,42 @@ section {
     text-align: center;
     margin: 0 auto;
     margin-bottom: 2%;
-    
+
 }
 
 .adventure-team figure {
-grid-row: 2 / 3;
+    grid-row: 2 / 3;
     margin: 0 auto;
     /* grid-auto-columns: minmax(100px, 2); */
+    /* stretch img */
+    /* grid-template-columns: 1fr; */
     justify-self: center;
+    max-height: 400px;
+    
+
 }
 
-.adventure-team img {
+.adventure-team figcaption {
+    background-color: linear-gradient(to bottom, white 0%,grey 100%);
+    margin: 0 auto;
+    max-height: 138px;
+    max-width: 100%;
+    overflow: hidden; 
+    transition: max-height 0.25s ease;
+    text-align:justify;
+    
+
+}
+
+.adventure-details figcaption:hover {
+    margin: 0 auto;
+    max-height: 300px;
+    max-width: 100%;
+    overflow: scroll; 
+
+}
+
+.adventure-team-contact img {
     grid-row: 2 / 3;
     max-height: 175px;
     /* grid-auto-rows: minmax(100px, auto);
@@ -348,12 +613,29 @@ grid-row: 2 / 3;
     min-width: 175px;
     max-width: 100%;
     object-fit: cover;
-    object-position: center top;
+    object-position:center top;
     margin: 0 auto;
     overflow: hidden;
 
     /* object-position: center top; */
 }
+
+.adventure-team-trips img {
+    grid-row: 2 / 3;
+    max-height: 175px;
+    /* grid-auto-rows: minmax(100px, auto);
+    grid-auto-columns: minmax(100px, auto); */
+    min-height: 250px;
+    min-width: 175px;
+    max-width: 100%;
+    object-fit: cover;
+    object-position:center;
+    margin: 0 auto;
+    /* overflow: hidden; */
+
+    /* object-position: center top; */
+}
+
 
 .contact-form {
     display: flex;
@@ -371,9 +653,9 @@ grid-row: 2 / 3;
 
 .contact-form form {
     width: 100%;
-    
+
     /* padding: 1em;   */
-   
+
     /* box-sizing: border-box; */
     /* border: 1px solid var(--accent2-color); */
     /* border-radius: 0.5rem; */
@@ -381,8 +663,9 @@ grid-row: 2 / 3;
     grid-template-columns: minmax(200px, auto);
     grid-template-rows:  minmax(100px, auto); */
     text-align: center;
-    
+
 }
+
 .contact-form legend {
     margin: 1em auto;
     font-size: 1.2em;
@@ -410,7 +693,7 @@ grid-row: 2 / 3;
 .radio-grid {
     display: grid;
     /* margin: 1em auto; */
-    
+
 }
 
 form fieldset {
@@ -418,7 +701,7 @@ form fieldset {
 }
 
 /* Name and Email */
-.section1 input{
+.section1 input {
     /* margin: 1em auto; */
     width: 20em;
     height: 2em;
@@ -439,7 +722,7 @@ flex-direction: column; */
     margin-bottom: 1em;
 }
 
-.section3 textarea{
+.section3 textarea {
     width: 80%;
     height: 100px;
     max-width: 900px;
@@ -451,6 +734,7 @@ flex-direction: column; */
 .section4 div:nth-child(1) {
     margin-bottom: 1em;
 }
+
 /* Messages */
 .section3 input {
     /* margin: 1em auto; */
@@ -464,13 +748,75 @@ flex-direction: column; */
     color: var(--accent1-color);
     border-radius: 0.5rem;
     border: 0;
-    
-    }
+
+}
 
 .contact-form button:hover {
     background-color: var(--secondary-color);
     color: var(--accent2-color);
-    cursor: pointer;}
+    cursor: pointer;
+}
+
+
+.trip-details {
+    display: block;
+    background-color: var(--accent1-color);
+    padding: 2em 0;
+
+}
+
+.trip-details table {
+    /* border: 2px solid rgb(140 140 140); */
+    /* center table */
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: 2px;
+    border-collapse: collapse;
+}
+
+
+.trip-details table h2 {
+    /* padding-top: 1em; */
+    margin: 0 auto;
+}
+
+.trip-details caption {
+/* horizontal align center */
+    text-align: center;
+
+    padding-bottom: .75em;
+    
+
+    /* padding: 1em; */
+    /* background-color: white; */
+}
+
+.trip-details .header {
+    background-color:  white;
+    border: 0;
+}
+
+.trip-details th {
+
+    padding: 1em;
+}
+
+.trip-details th,td {
+    border: 2px solid rgb(140 140 140);
+    padding: 1em;
+}
+
+
+.trip-details table .col1:hover {
+    opacity: .5;
+}
+
+
+
+
+.trip-details tbody > tr:nth-of-type(even), thead {
+    background-color: rgb(237 238 242);
+  }
 
 /* 
 .contact-form fieldset {
@@ -482,26 +828,35 @@ flex-direction: column; */
 } */
 
 
+.trip-button {
+    position: absolute;
+    bottom: 7em;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
 
 
 footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    justify-content: stretch;
-    align-items: start;
+    display: flex;
+   
+margin: 0 auto;
+    
+    /* center */
+    justify-content: center;
+
+    height: auto;
+    position:static;
+    /* wrap */
+    
 }
 
 footer p {
-    grid-column: 2 / 4;
-    grid-row: 1 / 2;
     font-size: 1em;
-    align-content: center;
-    justify-content: center;
 }
 
 footer div {
-    grid-area: 1 / 3 / 2 / 4;
-    justify-self: center;
+
+    padding-top: 1em;
 
 }
