@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | WDD 130</title>
+    <title>Contact Us | Country Rafting Co. | WDD 130</title>
     <link rel="stylesheet" href="styles/rafting.css">
     <meta name="description"
         content="This is the contact page which provides a form for visitors to contact rafting customer service">
@@ -39,7 +39,7 @@
                 <div class="map">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12705.356473191801!2d-113.28057009154259!3d37.23966078291074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1711772714080!5m2!1sen!2sus"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        width="600" height="450" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
@@ -49,7 +49,7 @@
 
         </section>
         <section class="adventure-team adventure-team-contact">
-            <h2>The Adventure Team!</h2>
+            <h1>The Adventure Team!</h1>
             <figure><img src="images/employee1.jpg" alt="River with empty rafts" width="300">
                 <figcaption>Chris P. Bacon: Professional Bear Caller</figcaption>
             </figure>
@@ -62,20 +62,26 @@
 
         </section>
         <section class="contact-form">
-            <h2>Contact Us</h2>
+            <h1>Contact Us</h1>
             <form action="https://formspree.io/f/xnqldzqz" method="POST">
 
                 <fieldset class="section1">
                     <legend>Please contact our team of rafting experts for any questions:</legend>
                     <!-- class="basic-inputs" -->
                     <div>
-                        <label for="name">Name:</label>
+                        <label for="name">Name*:</label>
                         <input type="text" id="name" name="name" required>
                     </div>
                     <div>
-                        <label for="email">Email:</label>
+                        <label for="email">Email*:</label>
                         <input type="email" id="email" name="email" required>
                     </div>
+                    <div>
+                        <label for="date">Date of Trip:</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+               
+                   
                 </fieldset>
 
 
@@ -83,21 +89,22 @@
                     <legend>Reason for request?</legend>
                     <!-- <div>
                         <label class="radio-grid" for="purpose"></label></div> -->
+                        <label for="purpose"></label>
                     <div class="section2-radio">
-                        <input type="radio" id="purpose1" name="purpose" value="General Inquiry" required>General Inquiry
+                        <input type="radio" id="purpose1" name="purpose" value="General Inquiry">General Inquiry
                     </div>
                     <div class="section2-radio">
-                        <input type="radio" id="purpose2" name="purpose" value="Reservation Request" required>Reservation
+                        <input type="radio" id="purpose2" name="purpose" value="Reservation Request">Reservation
                         Request
                     </div>
                     <div class="section2-radio"><input type="radio" id="purpose3" name="purpose" value="Website Suggestion"
-                        required>Website Suggestion
+                        >Website Suggestion
                     </div>
                 </fieldset>
 
 
                     <fieldset class="section3">
-                        <legend>Message:</legend>
+                        <legend>Message*:</legend>
                         <div> <label for="message"></label></div>
                         <div>
                             <textarea id="message" name="message" required></textarea>
@@ -106,10 +113,9 @@
 
                     <fieldset class="section4">
                         <legend>Subscribe to our newsletter?</legend>
+                      
                         <div>
                             <label for="subscribe"></label>
-                        </div>
-                        <div>
                             <input type="checkbox" id="subscribe" name="subscribe" value="yes">Yes, I would like to
                             subscribe.
                         </div>

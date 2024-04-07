@@ -531,7 +531,7 @@ section {
 
 
 
-.adventure-team h2 {
+.adventure-team h1 {
     grid-column: 1 / 4;
     /* grid-row: 1 / 2; */
     justify-self: center;
