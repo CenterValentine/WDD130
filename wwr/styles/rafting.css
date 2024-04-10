@@ -316,7 +316,7 @@ form button {
     top: 50px;
     width: 100%;
     background-color: var(--accent2-color);
-    color: var(--accent1-color);
+    color: white;
     text-align: center;
     /* verticle alignment*/
     line-height: 2em;
