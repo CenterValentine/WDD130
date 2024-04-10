@@ -205,6 +205,7 @@ form button {
     color: var(--accent1-color);
     width: 100%;
     margin: 2.75em auto;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .container-cta-card-trip-button {
@@ -392,10 +393,10 @@ form button {
     align-self: end;
 }
 
-.hero-info strong {
+/* .hero-info strong {
     color: var(--secondary-color);
     font-size: 1.5em;
-}
+} */
 
 .hero-info {
     grid-area: 3/ 1 / 4 / 2;
