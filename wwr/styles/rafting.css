@@ -37,12 +37,9 @@ header {
     padding: 2em;
 }
 
-header img {
-
-    /* width: 100%; */
+header img, .flex-item-1 h2 {
     height: auto;
     margin: 0 auto;
-
 }
 
 nav {
@@ -55,7 +52,10 @@ nav {
     justify-self: start;
 
 }
-nav a, nav a:link, nav a:visited {
+
+nav a,
+nav a:link,
+nav a:visited {
     display: block;
     flex-shrink: 0;
     flex-grow: 1;
@@ -65,21 +65,21 @@ nav a, nav a:link, nav a:visited {
 }
 
 nav a:hover {
-    color: var(--nav-hover-link-color); /* Ensure this variable is correctly named */
+    color: var(--nav-hover-link-color);
+    /* Ensure this variable is correctly named */
     background-color: var(--nav-hover-background-color);
 }
-
-
 
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6, .home-container-cta legend {
     color: var(--accent2-color);
     font-size: 3em;
     text-align: center;
+    
 }
 
 p {
@@ -87,9 +87,6 @@ p {
     font-size: 1em;
 }
 
-p>strong {
-    color: var(--secondary-color);
-}
 
 
 
@@ -97,16 +94,12 @@ p>strong {
     display: block;
     width: 100%;
     margin: 1em auto;
-
 }
 
 .hero-ish img {
-    /* display: block; */
     width: 100%;
     max-height: 400px;
     object-fit: cover;
-    /* margin: 0 auto; */
-    /* position: relative; */
     z-index: -1;
 }
 
@@ -114,8 +107,6 @@ p>strong {
     position: absolute;
     margin: 1em auto;
     z-index: 1;
-
-
 }
 
 .home-container-cta {
@@ -130,25 +121,25 @@ p>strong {
 .home-container-cta h1 {
     font-size: 3em;
 }
+
 .home-container-cta legend {
     font-size: 2em;
-    padding: 0em 1em;
 
+    text-wrap: none;   
 }
 
 .container-cta-card-subscribe {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+
+    max-height: 500px;
     margin: 0 auto;
     grid-area: 1 / 1 / 2 / 2;
     background-color: var(--accent1-color);
     width: 100%;
     min-width: 450px;
-}
-
-.container-cta-card-subscribe {
-display: grid;
-grid-template-columns: 1fr;
-grid-template-rows: repeat(5, 1fr);
-max-height: 500px;
+    /* grid shrink */
 }
 
 .container-cta-card-subscribe form {
@@ -158,7 +149,6 @@ max-height: 500px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-
 }
 
 .container-cta-card-subscribe form label {
@@ -173,12 +163,13 @@ max-height: 500px;
 }
 
 
-.container-cta-card-subscribe form div{
+.container-cta-card-subscribe form div {
     margin: 1em auto;
     /* padding: 1em;  */
 }
 
-.hero button, form button{
+.hero button,
+form button {
     margin: 1em auto;
     padding: 1em;
     background-color: var(--accent2-color);
@@ -242,8 +233,8 @@ max-height: 500px;
     flex-wrap: wrap;
     justify-content: space-between;
 
-    
-    
+
+
 }
 
 .container-home-info p {
@@ -258,7 +249,7 @@ max-height: 500px;
 .container-home-info .container-home-info-flex2 p {
     margin: 0 auto;
     /* padding: 15% 0; */
-    /* text-align: center;
+/* text-align: center;
     font-size: 1.3em;
     background-color: var(--accent1-color);
     width: 100%;
@@ -267,16 +258,18 @@ max-height: 500px;
     flex-grow: 1;
     flex-shrink: 1;
  */
- .container-home-info-flex2:hover, .container-home-info-flex4:hover {
+.container-home-info-flex2:hover,
+.container-home-info-flex4:hover {
     overflow-y: scroll;
- }
+}
 
 .container-home-info-flex1,
 .container-home-info-flex2,
 .container-home-info-flex3,
 .container-home-info-flex4 {
     display: block;
-    margin: 0.5em; /* Adjusted for a consistent margin around all items */
+    margin: 0.5em;
+    /* Adjusted for a consistent margin around all items */
     flex-basis: calc(50% - 1em);
     width: 100%;
     height: auto;
@@ -289,11 +282,12 @@ max-height: 500px;
 }
 
 
-.container-home-info-flex3{
-order: 4;
+.container-home-info-flex3 {
+    order: 4;
 }
+
 .container-home-info-flex4 {
-    order: 3; 
+    order: 3;
 
 }
 
@@ -336,7 +330,7 @@ order: 4;
     width: 100%;
     height: auto;
     margin: -3.5em auto;
-    padding: .25em;
+    /* padding: .25em; */
     font-size: 2em;
 
 }
@@ -411,21 +405,17 @@ order: 4;
 }
 
 .map {
-
     margin: 0 auto;
     padding: 1em;
     width: 100%;
 }
 
-
 .hero-contact {
     align-self: center;
-
 }
 
 section {
     margin: 0px auto;
-    /* padding: 20px 0px; */
 }
 
 .history-flex-container {
@@ -434,15 +424,10 @@ section {
     margin-top: 3%;
 }
 
-
 .flex-item-1 {
     order: 2;
     display: flex;
     flex-direction: column;
-}
-
-.flex-item-1 h2 {
-    margin: 0 auto;
 }
 
 .flex-item-1 img {
@@ -466,12 +451,11 @@ section {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     /* overflow: hidden;  */
     margin: 0 auto;
-    height: 100%;
+    min-height: 100%;
     width: 100%;
     box-sizing: border-box;
     column-gap: 10px;
-    margin-top: 3%;
-    margin-bottom: 3%;
+    
 }
 
 .adventure h2 {
@@ -481,15 +465,14 @@ section {
     text-align: center;
     margin: 0 auto;
     margin-bottom: 2%;
-
 }
 
 .adventure figure {
     margin: 0 auto;
     /* text-overflow: clip; */
-    max-height: 100px;
-}
 
+
+}
 
 .adventure img {
     grid-row: 2 / 3;
@@ -504,14 +487,10 @@ section {
     /* object-position: center top; */
 }
 
-
-
-
 .adventure-details figcaption {
     margin: 0 auto;
     max-height: 100px;
     text-overflow: clip;
-
 }
 
 .adventure-team {
@@ -529,15 +508,13 @@ section {
     /* justify-content: space-around; */
 }
 
-
-.adventure-team h1 {
+.adventure-team h1,h2 {
     grid-column: 1 / 4;
     /* grid-row: 1 / 2; */
     justify-self: center;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 2%;
-
 }
 
 .adventure-team figure {
@@ -547,29 +524,25 @@ section {
     /* stretch img */
     /* grid-template-columns: 1fr; */
     justify-self: center;
-    max-height: 400px;
-    
-
+    /* max-height: 400px; */
 }
 
 .adventure-team figcaption {
-
     margin: 0 auto;
-    max-height: 138px;
+    padding: 10px;
+    max-height: 130px;
     max-width: 100%;
-    overflow: hidden; 
+    overflow: hidden;
     transition: max-height 0.25s ease;
-    text-align:justify;
-    
-
+    text-align: justify;
 }
 
 .adventure-details figcaption:hover {
-    margin: 0 auto;
-    max-height: 300px;
+    padding: 10px;
+    max-height: 175px;
     max-width: 100%;
-    overflow: scroll; 
-
+    overflow: scroll;
+    background-color: white;
 }
 
 .adventure-team-contact img {
@@ -581,7 +554,7 @@ section {
     min-width: 175px;
     max-width: 100%;
     object-fit: cover;
-    object-position:center top;
+    object-position: center top;
     margin: 0 auto;
     overflow: hidden;
 
@@ -597,7 +570,7 @@ section {
     min-width: 175px;
     max-width: 100%;
     object-fit: cover;
-    object-position:center;
+    object-position: center;
     margin: 0 auto;
     /* overflow: hidden; */
 
@@ -621,17 +594,7 @@ section {
 
 .contact-form form {
     width: 100%;
-
-    /* padding: 1em;   */
-
-    /* box-sizing: border-box; */
-    /* border: 1px solid var(--accent2-color); */
-    /* border-radius: 0.5rem; */
-    /* display: grid;
-    grid-template-columns: minmax(200px, auto);
-    grid-template-rows:  minmax(100px, auto); */
     text-align: center;
-
 }
 
 .contact-form legend {
@@ -644,9 +607,7 @@ section {
 
 .contact-form fieldset {
     border: 0;
-    /* margin: 1em auto; */
-
-
+    margin: 1em auto;
 }
 
 
@@ -654,15 +615,10 @@ section {
     font-family: var(--form-font);
 }
 
-.contact-form div {
-    /* margin: .75em; */
-}
-
+/* 
 .radio-grid {
     display: grid;
-    /* margin: 1em auto; */
-
-}
+} */
 
 form fieldset {
     margin: 1em auto;
@@ -670,7 +626,6 @@ form fieldset {
 
 /* Name and Email */
 .section1 input {
-    /* margin: 1em auto; */
     width: 20em;
     height: 2em;
     margin: 1em auto;
@@ -694,9 +649,8 @@ form fieldset {
     margin-bottom: 1em;
 }
 
-/* Messages */
+
 .section3 input {
-    /* margin: 1em auto; */
     width: 15em;
 }
 
@@ -707,51 +661,40 @@ form fieldset {
     color: var(--accent1-color);
     border-radius: 0.5rem;
     border: 0;
-
 }
 
-.contact-form button:hover {
+.contact-form button:hover,.hero button:hover, form button:hover, .container-cta-card-trip button:hover {
     background-color: var(--secondary-color);
     color: var(--accent2-color);
-    cursor: pointer;
+    cursor:pointer;
+    margin-bottom: 1em auto;
 }
-
 
 .trip-details {
     display: block;
     background-color: var(--accent1-color);
-    padding: 2em 0;
-
+    padding: 2em 2em;
+    margin-top: 60px;
 }
 
 .trip-details table {
-    /* border: 2px solid rgb(140 140 140); */
-    /* center table */
     margin: 0 auto;
     text-align: center;
     letter-spacing: 2px;
     border-collapse: collapse;
 }
 
-
 .trip-details table h2 {
-    /* padding-top: 1em; */
     margin: 0 auto;
 }
 
 .trip-details caption {
-/* horizontal align center */
     text-align: center;
-
     padding-bottom: .75em;
-    
-
-    /* padding: 1em; */
-    /* background-color: white; */
 }
 
 .trip-details .header {
-    background-color:  white;
+    background-color: white;
     border: 0;
 }
 
@@ -759,24 +702,20 @@ form fieldset {
     padding: 1em;
 }
 
-.trip-details th,td {
+.trip-details th,
+td {
     border: 2px solid rgb(140 140 140);
     padding: 1em;
 }
 
-
-.trip-details table .col1:hover {
+/* .trip-details table .col1:hover {
     opacity: .5;
-}
+} */
 
-
-
-
-.trip-details tbody > tr:nth-of-type(even), thead {
+.trip-details tbody>tr:nth-of-type(even),
+thead {
     background-color: rgb(237 238 242);
-  }
-
-
+}
 
 .trip-button {
     position: absolute;
@@ -785,25 +724,20 @@ form fieldset {
     transform: translate(-50%, 50%);
 }
 
-
-
 footer {
     display: flex;
-   
-margin: 0 auto;
-    
-    /* center */
+    margin: 1em auto;
     justify-content: center;
-
-    height: auto;
-    position:static;
-    /* wrap */
+    /* align-content: center; */
+    /* wrap? */
     font-size: 1em;
-    
+    padding-top: 1em;
+    width: 100%;
+    position: relative;
 }
 
 footer div {
-
     padding-top: 1em;
-
+    /* width: 100%; */
+    /* margin: 0 auto; */
 }
