@@ -198,7 +198,7 @@ form button {
     min-height: 400px;
     object-fit: cover;
     /* fade img color */
-    filter: brightness(75%);
+    filter: brightness(50%);
 
 }
 
