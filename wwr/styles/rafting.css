@@ -123,9 +123,7 @@ p {
 }
 
 .home-container-cta legend {
-    font-size: 2em;
-
-    text-wrap: none;   
+    font-size: 2em; 
 }
 
 .container-cta-card-subscribe {
@@ -664,7 +662,7 @@ form fieldset {
     background-color: var(--secondary-color);
     color: var(--accent2-color);
     cursor:pointer;
-    margin-bottom: 1em auto;
+    margin-bottom: 1em;
 }
 
 .trip-details {
