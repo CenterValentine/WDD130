@@ -326,12 +326,12 @@ form button {
     opacity: .9;
     color: var(--accent2-color);
     background-color: var(--accent1-color);
-    width: 100%;
+    width: 70%;
     height: auto;
-    margin: -3.5em auto;
-    /* padding: .25em; */
+    margin: -3.5em .5em;
+    padding: .25em 0;
     font-size: 2em;
-
+    object-position: right;
 }
 
 .hero article {
